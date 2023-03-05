@@ -24,12 +24,10 @@ public class Food extends Product{
         now.add(Calendar.DATE,7);
         return now.getTime();
     }
-
     @Override
     public String toString() {
         return String.format("%s, Expiration date: %tD",super.toString(),expirationDate);
     }
-
     public static class Bread extends Food{
         /**
          * "Wheat" or "Rye"
@@ -54,7 +52,6 @@ public class Food extends Product{
         public Eggs(){
             this(10);
         }
-
         @Override
         public String toString() {
             return String.format("%s, Amount in Package: %d",super.toString(),amountInPack);

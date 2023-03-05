@@ -10,7 +10,6 @@ public class Programm {
     static void getInfo(Object a) {
         System.out.println(a.toString());
     }
-
     public static void main(String[] args) {
         Product bread = new Bread();
         bread.name = "bread";

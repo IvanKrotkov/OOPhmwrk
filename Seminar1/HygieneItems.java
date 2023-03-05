@@ -8,12 +8,10 @@ public class HygieneItems extends Product{
     public HygieneItems(){
         this(1);
     }
-
     @Override
     public String toString() {
         return String.format("%s, Amount in Package: %d", super.toString(), amountPackaged);
     }
-
     public static class Masks extends HygieneItems{
         /**
          * "Night", "Cleansing" or "Regenerating";
@@ -25,7 +23,6 @@ public class HygieneItems extends Product{
         public Masks(){
             this("Night");
         }
-
         @Override
         public String toString() {
             return String.format("%s, Type mask: %s",super.toString(),typeMask);
@@ -39,7 +36,6 @@ public class HygieneItems extends Product{
         public ToiletPaper(){
             this(2);
         }
-
         @Override
         public String toString() {
             return String.format("%s, Count layers: %d",super.toString(),countLayers);
