@@ -1,7 +1,7 @@
 # Задание первого семинара
 *Реализовать класс товар с дальнейшими подклассами*
-* Общий класс продукт - [url](Product.java)
-    * Класс продуктов питания [url](Food.java)
+* Общий класс продукт - [url](Seminar1/Product.java)
+    * Класс продуктов питания [url](Seminar1/Food.java)
         * Класс хлеб 
         ```Java
         public static class Bread extends Food{
@@ -38,7 +38,7 @@
         }
         }
         ```
-    * Класс напитков [url](Beverages.java)
+    * Класс напитков [url](Seminar1/Beverages.java)
         * Молоко
         ```java
         public static class Milk extends Beverages{
@@ -79,7 +79,7 @@
         }
         }
         ```
-    * Предметы гигены [url](HygieneItems.java)
+    * Предметы гигены [url](Seminar1/HygieneItems.java)
         * Маски
         ```java
             public static class Masks extends HygieneItems{
@@ -117,7 +117,7 @@
         }
         }
         ```
-    * Товары для детей [url](ChildrensGoods.java)
+    * Товары для детей [url](Seminar1/ChildrensGoods.java)
       * Подгузники
       ```java
       public static class Diapers extends ChildrensGoods {
@@ -170,4 +170,4 @@
               }
         }
       ```
-* Результат [url](Programm.java)
+* Результат [url](Seminar1/Programm.java)
