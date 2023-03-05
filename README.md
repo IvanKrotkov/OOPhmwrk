@@ -79,7 +79,7 @@
         }
         }
         ```
-    * Предметы гигены
+    * Предметы гигены [url](HygieneItems.java)
         * Маски
         ```java
             public static class Masks extends HygieneItems{
