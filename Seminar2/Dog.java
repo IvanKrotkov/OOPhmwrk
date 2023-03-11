@@ -1,23 +1,39 @@
 package Seminar2;
 
 public class Dog extends Pet implements MakeASound{
-    enum thePreseneceOfTraining{
+    private enum ThePreseneceOfTraining{
         trained,notTrained;
     }
-    static private thePreseneceOfTraining training = thePreseneceOfTraining.notTrained;
-
+    private ThePreseneceOfTraining training;
+    public Dog(ThePreseneceOfTraining training,String name, String breed, AvailabilityOfVaccinations availability, String woolColor, int weight, int height, String eyeColor) {
+        super(name, breed, availability, woolColor, weight, height, eyeColor);
+        this.training = training;
+    }
+    public Dog(ThePreseneceOfTraining training){
+        this(training,"Лайка", "немецкая овчарка",AvailabilityOfVaccinations.grafted,"чёрно-коричневый",30,60,"black");
+    }
+    public Dog(){
+        this(ThePreseneceOfTraining.trained);
+    }
     public void train(){
-        if (training == thePreseneceOfTraining.notTrained){
-            training = thePreseneceOfTraining.trained;
+        if (training == ThePreseneceOfTraining.notTrained){
             System.out.println("Собака проходит полноценные тренировки,и в скором времени она станет дрессированная");
-        } else System.out.println("Собака уже дрессированная");
+            training = ThePreseneceOfTraining.trained;
+        }else System.out.println("Собака тренируется за вкусняшки");
     }
     @Override
     public void caress() {
-
+        System.out.println("Лижется и усердно виляет хвостом");
     }
     @Override
     public void makeASound() {
-
+        System.out.println("Гав-гав");
+    }
+    @Override
+    public String toString() {
+        StringBuilder str = new StringBuilder(super.toString());
+        str.insert(20,"собака, ");
+        str.append("степень дрессировки: " + training);
+        return str.toString();
     }
 }

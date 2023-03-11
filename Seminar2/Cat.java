@@ -1,7 +1,7 @@
 package Seminar2;
 
 public class Cat extends Pet implements MakeASound{
-    enum thePresenceOfWool{
+    private enum thePresenceOfWool{
         bald,withWool;
     }
     private thePresenceOfWool wooliness;
@@ -23,16 +23,11 @@ public class Cat extends Pet implements MakeASound{
     public void makeASound() {
         System.out.println("мяууу");
     }
-
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder(super.toString());
         str.insert(20,"кошка, ");
         str.append("наличие шерсти: " + wooliness);
         return str.toString();
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Cat());
     }
 }

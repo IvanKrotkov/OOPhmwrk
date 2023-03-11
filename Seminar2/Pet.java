@@ -3,7 +3,7 @@ package Seminar2;
 public abstract class Pet extends Animal{
     protected String name;
     protected String breed;
-    enum AvailabilityOfVaccinations{
+    protected enum AvailabilityOfVaccinations{
         grafted,unvaccinate;
     }
     private AvailabilityOfVaccinations availability;
@@ -16,7 +16,6 @@ public abstract class Pet extends Animal{
         this.availability = availability;
         this.woolColor = woolColor;
     }
-
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder(super.toString());
