@@ -5,7 +5,11 @@ import java.util.Date;
 public class WildAnimal extends Animal {
     protected String habitat;
     protected Date dateOfFinding;
-
+    public WildAnimal(String habitat, Date dateOfFinding,int weight, int height, String eyeColor){
+        super(weight, height, eyeColor);
+        this.habitat = habitat;
+        this.dateOfFinding = dateOfFinding;
+    }
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder(super.toString());
