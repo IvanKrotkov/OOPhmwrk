@@ -9,10 +9,16 @@ public class Chicken extends Bird implements MakeASound{
     }
     @Override
     public void fly() {
-        System.out.println(String.format("Я лечу на %d метрах", flightAltitude));
+        super.fly();
     }
     @Override
     public void makeASound() {
         System.out.println("Ку-ка-ре-ку");
+    }
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder(super.toString());
+        sb.insert(7,"Курица");
+        return sb.toString();
     }
 }
