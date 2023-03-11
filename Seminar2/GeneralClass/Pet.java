@@ -1,9 +1,11 @@
-package Seminar2;
+package Seminar2.GeneralClass;
 
-public abstract class Pet extends Animal{
+import Seminar2.GeneralClass.Animal;
+
+public abstract class Pet extends Animal {
     protected String name;
     protected String breed;
-    protected enum AvailabilityOfVaccinations{
+     public enum AvailabilityOfVaccinations{
         grafted,unvaccinate;
     }
     private AvailabilityOfVaccinations availability;

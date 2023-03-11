@@ -1,7 +1,9 @@
-package Seminar2;
+package Seminar2.DescendantClasses;
 
-public class Cat extends Pet implements MakeASound{
-    private enum thePresenceOfWool{
+import Seminar2.GeneralClass.Pet;
+
+public class Cat extends Pet {
+    public enum thePresenceOfWool{
         bald,withWool;
     }
     private thePresenceOfWool wooliness;

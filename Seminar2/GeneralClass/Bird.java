@@ -1,6 +1,8 @@
-package Seminar2;
+package Seminar2.GeneralClass;
 
-public class Bird extends Animal{
+import Seminar2.GeneralClass.Animal;
+
+public class Bird extends Animal {
     protected int flightAltitude;
     public Bird(int flightAltitude,int weight, int height, String eyeColor) {
         super(weight, height, eyeColor);

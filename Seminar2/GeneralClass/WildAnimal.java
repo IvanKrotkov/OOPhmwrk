@@ -1,11 +1,13 @@
-package Seminar2;
+package Seminar2.GeneralClass;
+
+import Seminar2.GeneralClass.Animal;
 
 import java.util.Date;
 
 public class WildAnimal extends Animal {
     protected String habitat;
     protected Date dateOfFinding;
-    public WildAnimal(String habitat, Date dateOfFinding,int weight, int height, String eyeColor){
+    protected WildAnimal(String habitat, Date dateOfFinding,int weight, int height, String eyeColor){
         super(weight, height, eyeColor);
         this.habitat = habitat;
         this.dateOfFinding = dateOfFinding;

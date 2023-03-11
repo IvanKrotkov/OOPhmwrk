@@ -1,8 +1,10 @@
-package Seminar2;
+package Seminar2.DescendantClasses;
+
+import Seminar2.GeneralClass.WildAnimal;
 
 import java.util.Date;
 
-public class Tiger extends WildAnimal implements MakeASound{
+public class Tiger extends WildAnimal {
     public Tiger(String habitat, Date dateOfFinding, int weight, int height, String eyeColor){
         super(habitat, dateOfFinding, weight, height, eyeColor);
     }

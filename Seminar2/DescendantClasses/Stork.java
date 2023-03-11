@@ -1,6 +1,8 @@
-package Seminar2;
+package Seminar2.DescendantClasses;
 
-public class Stork extends Bird implements MakeASound{
+import Seminar2.GeneralClass.Bird;
+
+public class Stork extends Bird {
     public Stork(int flightAltitude, int weight, int height, String eyeColor) {
         super(flightAltitude, weight, height, eyeColor);
     }
@@ -18,7 +20,7 @@ public class Stork extends Bird implements MakeASound{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder(super.toString());
-        sb.insert(7,"Аист");
+        sb.insert(8,"аист, ");
         return sb.toString();
     }
 }

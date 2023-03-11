@@ -1,8 +1,10 @@
-package Seminar2;
+package Seminar2.DescendantClasses;
+
+import Seminar2.GeneralClass.WildAnimal;
 
 import java.util.Date;
 
-public class Wolf extends WildAnimal implements MakeASound{
+public class Wolf extends WildAnimal {
     private enum BelongingToTheClassOfTheWolfPack{
         alpha,alphaFemale,beta,motherSheWolf,warriors;
     }
