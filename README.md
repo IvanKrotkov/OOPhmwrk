@@ -171,3 +171,20 @@
         }
       ```
 * Результат [url](Seminar1/Programm.java)
+# Задание второго семинара
+*Реализация классов животных и составления из них зоопарка в рамках ООП*
+1. Основные классы -[url](Seminar2/GeneralClass)
+   1. Класс животные - [url](Seminar2/GeneralClass/Animal.java)
+   2. Класс птицы - [url](Seminar2/GeneralClass/Bird.java)
+   3. Класс домашних животных - [url](Seminar2/GeneralClass/Pet.java)
+   4. Класс диких животных - [url](Seminar2/GeneralClass/WildAnimal.java)
+   5. Класс зоопарк - [url](Seminar2/GeneralClass/Zoo.java)
+   6. Также сюда включил интерфейс менюшки - [url](Seminar2/GeneralClass/ConsoleMenu.java) 
+2. Классы наследники - [url](Seminar2/DescendantClasses)
+   1. Класс кошки - [url](Seminar2/DescendantClasses/Cat.java)
+   2. Класс курица - [url](Seminar2/DescendantClasses/Chicken.java)
+   3. Класс собака - [url](Seminar2/DescendantClasses/Dog.java)
+   4. Класс аист - [url](Seminar2/DescendantClasses/Stork.java)
+   5. Класс тигр - [url](Seminar2/DescendantClasses/Tiger.java)
+   6. Класс волк - [url](Seminar2/DescendantClasses/Wolf.java)
+3. Результат - [url](Seminar2/Programm.java)
