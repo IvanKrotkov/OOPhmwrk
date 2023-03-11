@@ -5,11 +5,10 @@ import Seminar2.GeneralClass.WildAnimal;
 import java.util.Date;
 
 public class Wolf extends WildAnimal {
-    private enum BelongingToTheClassOfTheWolfPack{
+    public enum BelongingToTheClassOfTheWolfPack{
         alpha,alphaFemale,beta,motherSheWolf,warriors;
     }
     private BelongingToTheClassOfTheWolfPack title;
-
     public Wolf(BelongingToTheClassOfTheWolfPack title, String habitat, Date dateOfFinding,int weight, int height, String eyeColor) {
         super(habitat, dateOfFinding, weight, height, eyeColor);
         this.title = title;

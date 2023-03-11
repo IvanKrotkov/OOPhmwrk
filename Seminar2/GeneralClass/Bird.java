@@ -11,7 +11,6 @@ public class Bird extends Animal {
     public void fly() {
         System.out.println(String.format("Я лечу на %d метрах", flightAltitude));
     }
-
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder(super.toString());

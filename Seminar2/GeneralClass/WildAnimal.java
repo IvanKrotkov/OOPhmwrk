@@ -4,7 +4,7 @@ import Seminar2.GeneralClass.Animal;
 
 import java.util.Date;
 
-public class WildAnimal extends Animal {
+public class WildAnimal extends Animal{
     protected String habitat;
     protected Date dateOfFinding;
     protected WildAnimal(String habitat, Date dateOfFinding,int weight, int height, String eyeColor){

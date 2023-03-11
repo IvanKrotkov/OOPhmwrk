@@ -3,7 +3,7 @@ package Seminar2.DescendantClasses;
 import Seminar2.GeneralClass.Pet;
 
 public class Dog extends Pet {
-    enum ThePreseneceOfTraining{
+    public enum ThePreseneceOfTraining{
         trained,notTrained;
     }
     private ThePreseneceOfTraining training;
