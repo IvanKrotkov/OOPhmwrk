@@ -1,5 +1,5 @@
 # Задание первого семинара
-*Реализовать класс товар с дальнейшими подклассами*
+*Реализовать класс товар с дальнейшими классами - наследниками*
 * Общий класс продукт - [url](Seminar1/Product.java)
     * Класс продуктов питания [url](Seminar1/Food.java)
         * Класс хлеб 
@@ -172,7 +172,7 @@
       ```
 * Результат [url](Seminar1/Programm.java)
 # Задание второго семинара
-*Реализация классов животных и составления из них зоопарка в рамках ООП*
+>*Реализация классов животных и составления из них зоопарка в рамках ООП*
 1. Основные классы -[url](Seminar2/GeneralClass)
    1. Класс животные - [url](Seminar2/GeneralClass/Animal.java)
    2. Класс птицы - [url](Seminar2/GeneralClass/Bird.java)
@@ -188,3 +188,5 @@
    5. Класс тигр - [url](Seminar2/DescendantClasses/Tiger.java)
    6. Класс волк - [url](Seminar2/DescendantClasses/Wolf.java)
 3. Результат - [url](Seminar2/Programm.java)
+
+
