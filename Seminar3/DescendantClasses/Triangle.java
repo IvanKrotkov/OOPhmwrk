@@ -1,4 +1,7 @@
-package Seminar3;
+package Seminar3.DescendantClasses;
+
+import Seminar3.GeneralClasses.Figure;
+import Seminar3.Interfaces.Perimetrable;
 
 public class Triangle extends Figure implements Perimetrable {
     private int sideFirst;

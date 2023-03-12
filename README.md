@@ -188,5 +188,17 @@
    5. Класс тигр - [url](Seminar2/DescendantClasses/Tiger.java)
    6. Класс волк - [url](Seminar2/DescendantClasses/Wolf.java)
 3. Результат - [url](Seminar2/Programm.java)
-
-
+# Задание третьего семинара 
+>*Написать программу с геометрическими фигурами*
+1. Основные классы - [GeneralClasses](Seminar3/GeneralClasses)
+   * Общий класс фигур - [Figure](Seminar3/GeneralClasses/Figure.java)
+   * Клас, для объединения фигур - [Geometry](Seminar3/GeneralClasses/Geometry.java)
+   
+   | **Сюда ещё можно отнести класс прямоугольников, поскольку от него наследуется
+        квадрат, но всё же отнёс его к классу наследнику** |
+2. Классы наследники - [DescendantClasses](Seminar3/DescendantClasses)
+   * Класс окружность - [Cicrle](Seminar3/DescendantClasses/Circle.java)
+   * Класс прямоугольник - [Rectangle](Seminar3/DescendantClasses/Rectangle.java)
+   * Класс квадрат - [Square](Seminar3/DescendantClasses/Square.java)
+   * Класс треугольники - [Triangle](Seminar3/DescendantClasses/Triangle.java)
+3. Файл [Program](Seminar3/Program.java) в котором проверял работоспособность кода.
