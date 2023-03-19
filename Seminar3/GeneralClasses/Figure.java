@@ -1,5 +1,7 @@
 package Seminar3.GeneralClasses;
 
+import java.util.HashMap;
+
 public abstract class Figure implements Comparable<Figure>{
     abstract public double area();
     @Override

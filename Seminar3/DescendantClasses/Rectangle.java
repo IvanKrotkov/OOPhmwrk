@@ -3,9 +3,20 @@ package Seminar3.DescendantClasses;
 import Seminar3.GeneralClasses.Figure;
 import Seminar3.Interfaces.Perimetrable;
 
+import java.util.HashMap;
+
 public class Rectangle extends Figure implements Perimetrable {
     protected int length;
     protected int width;
+    private HashMap<String,String> fieldSet;
+    {
+        fieldSet = new HashMap<>();
+        fieldSet.put("lenght: ",Integer.toString(this.length));
+        fieldSet.put("width: ", Integer.toString(this.width));
+    }
+    public HashMap<String,String> getFieldSet(){
+        return fieldSet;
+    }
     public Rectangle(int length, int width) {
         if (length <= 0 | width <= 0) {
             throw new RuntimeException("Такого прямоугольника не существует");

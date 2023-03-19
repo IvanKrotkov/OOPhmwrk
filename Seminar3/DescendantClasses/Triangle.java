@@ -7,6 +7,16 @@ public class Triangle extends Figure implements Perimetrable {
     private int sideFirst;
     private int sideSecond;
     private int sideThird;
+
+    public int getSideFirst() {
+        return sideFirst;
+    }
+    public int getSideSecond() {
+        return sideSecond;
+    }
+    public int getSideThird() {
+        return sideThird;
+    }
     public Triangle(int sideFirst, int sideSecond, int sideThird) {
         if (sideFirst + sideSecond < sideThird | sideSecond + sideThird < sideFirst
                 | sideFirst + sideThird < sideSecond) {
