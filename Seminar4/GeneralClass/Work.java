@@ -7,14 +7,17 @@ import java.util.Arrays;
 public class Work<T extends Comparable> implements Exception<T> {
     private Object[] array;
     private int length;
+
     public Work(T[] array) {
         this.array = array;
         this.length = array.length;
     }
+
     public Work() {
         this.array = new Object[1];
         this.length = 1;
     }
+
     public void addInArray(T obj) {
         if (this.array[0] == null) {
             this.array[0] = obj;
@@ -29,8 +32,9 @@ public class Work<T extends Comparable> implements Exception<T> {
             this.length = temp.length;
         }
     }
+
     public T minimumValue() {
-        arrayIsEmpty((T[])this.array);
+        arrayIsEmpty((T[]) this.array);
         T min = (T) this.array[0];
         for (int i = 0; i < this.length; i++) {
             if (min.compareTo(this.array[i]) < 0) {
@@ -39,8 +43,9 @@ public class Work<T extends Comparable> implements Exception<T> {
         }
         return min;
     }
+
     public T maxValue() {
-        arrayIsEmpty((T[])this.array);
+        arrayIsEmpty((T[]) this.array);
         T max = (T) this.array[0];
         for (int i = 0; i < this.length; i++) {
             if (max.compareTo(this.array[i]) > 0) {
@@ -49,9 +54,10 @@ public class Work<T extends Comparable> implements Exception<T> {
         }
         return max;
     }
+
     public T remove(int index) {
-        indexNotFound(index,this.length);
-        arrayIsEmpty((T[])this.array);
+        indexNotFound(index, this.length);
+        arrayIsEmpty((T[]) this.array);
         T res = (T) this.array[index];
         Object[] temp = new Object[this.length - 1];
         for (int i = 0; i < index; i++) {
@@ -64,6 +70,7 @@ public class Work<T extends Comparable> implements Exception<T> {
         this.length = temp.length;
         return res;
     }
+
     public int searchIndexEl(T obj) {
         objectIsNull(obj);
         if (existsInArray(obj)) {
@@ -75,6 +82,7 @@ public class Work<T extends Comparable> implements Exception<T> {
         }
         return -1;
     }
+
     public boolean existsInArray(T obj) {
         objectIsNull(obj);
         for (int i = 0; i < this.length; i++) {
@@ -84,8 +92,9 @@ public class Work<T extends Comparable> implements Exception<T> {
         }
         return false;
     }
+
     public void bubbleSort() {
-        arrayIsEmpty((T[])this.array);
+        arrayIsEmpty((T[]) this.array);
         for (int i = 0; i < this.length; i++) {
             for (int j = 0; j < this.length - 1; j++) {
                 if (((T) this.array[j]).compareTo(this.array[j + 1]) < 0) {
@@ -96,17 +105,20 @@ public class Work<T extends Comparable> implements Exception<T> {
             }
         }
     }
+
     public void setElement(int index, T obj) {
-        indexNotFound(index,this.length);
+        indexNotFound(index, this.length);
         objectIsNull(obj);
         this.array[index] = obj;
     }
+
     public T getElement(int index) {
-        indexNotFound(index,this.length);
+        indexNotFound(index, this.length);
         return (T) this.array[index];
     }
+
     public void selectionSort() {
-        arrayIsEmpty((T[])this.array);
+        arrayIsEmpty((T[]) this.array);
         for (int i = 0; i < this.length - 1; i++) {
             int min = i;
             for (int j = i + 1; j < this.length; j++) {
@@ -117,8 +129,9 @@ public class Work<T extends Comparable> implements Exception<T> {
             this.array[i] = temp;
         }
     }
+
     public void insertionSort() {
-        arrayIsEmpty((T[])this.array);
+        arrayIsEmpty((T[]) this.array);
         int i = 0;
         while (i < this.length) {
             T temp = (T) this.array[i];
@@ -130,10 +143,13 @@ public class Work<T extends Comparable> implements Exception<T> {
             i++;
         }
     }
+
     public int getLength() {
         return this.length;
     }
+
     public void print() {
         System.out.println(Arrays.toString(this.array));
     }
 }
+
