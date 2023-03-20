@@ -54,3 +54,27 @@
 2. Сам класс массивов - [GeneralClass](Seminar4/GeneralClass)
    * Класс - [Work](Seminar4/GeneralClass/Work.java)
 3. Файл [Program](Seminar4/Program.java) в котором проверял работоспособность кода.
+# Задание пятого семинара
+>*Создать информационную систему позволяющую работать с cтудентами вуза*
+1. Структура приложения - [Infrastructure](Seminar5/Infrasructure)
+   * Всё что касается предметов и их оценивания - [Attestation](Seminar5/Infrasructure/Attestation)
+     * Класс предметов - [Subjects](Seminar5/Infrasructure/Attestation/Subjects.java)
+     * Класс расписания (список предметов и методы) - [Schedule](Seminar5/Infrasructure/Attestation/Schedule.java)
+   * Работа с исключениями - [Exception](Seminar5/Infrasructure/Exception)
+     * Исключение при выдаче диплома - [ExceptionIssuingDiploma](Seminar5/Infrasructure/Exception/ExceptionIssuingDiploma.java)
+     * Исключение связанное с оцениванием предмета (задумывается, что преподаватель, 
+не имеющий специализации по данному предмету не может его оценить) - [ExceptionAttestations](Seminar5/Infrasructure/Exception/ExceptionAttestations.java)
+     * Исключение получения ученика или учителя из группы или рабочего коллектива соответственно - [ExceptionGettingHuman](Seminar5/Infrasructure/Exception/ExceptionGettingHuman.java)
+   * Всё что относится к человеку - [People](Seminar5/Infrasructure/People)
+     * Абстрактный класс человека, от которого наследуются преподаватели и студенты - [Human](Seminar5/Infrasructure/People/Human.java)
+     * Класс студента - [Student](Seminar5/Infrasructure/People/Student.java)
+     * Класс для группы ВУЗа (Учебная группа, рабочий коллектив преподавателей) - [StudyGroup](Seminar5/Infrasructure/People/StudyGroup.java)
+     * Класс преподаватели - [Teacher](Seminar5/Infrasructure/People/Teacher.java)
+   * Отдельный класс индетификатор, для предоставления ID - [Identificate](Seminar5/Infrasructure/Identificate.java) 
+2. Ядро программы - [Core](Seminar5/Core)
+    * Модель - [Model](Seminar5/Core/Model.java)
+    * Вьюер - [View](Seminar5/Core/View.java)
+    * Презентер - [Presenter](Seminar5/Core/Presenter.java)
+3. Всё что относится к клиенту - [Client](Seminar5/Client)
+   * Активация системы - [App](Seminar5/Client/App.java)
+   * Запуск системы - [Programm](Seminar5/Client/Program.java)
